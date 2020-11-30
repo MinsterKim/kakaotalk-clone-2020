@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.welcome-header {
+  margin: 20% 0%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header__title {
+  font-size: 18pt;
+  margin-bottom: 10%;
+  font-weight: bold;
+  color: var(--darkyellow);
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.8;
+  font-weight: normal;
+  line-height: 15pt;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.login-form input {
+  border: none;
+  padding: 10px 0px;
+  font-size: 14pt;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: border-color 0.5s ease-out;
+}
+
+.login-form input ::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.login-form input:nth-child(3) {
+  margin-top: 20px;
+}
+.login-form input:focus {
+  border-color: var(--yellow);
+}
